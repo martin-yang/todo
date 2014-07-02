@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+gem 'puma'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -43,3 +44,26 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :test do
+  gem 'turn', :require => false
+  gem 'rspec-rails','~> 2.13.2'
+  gem 'cucumber-rails', :require => false
+  gem 'spork'
+  gem 'spork-rails', :github => 'railstutorial/spork-rails'
+  gem 'database_cleaner', '~> 1.0.1'
+  gem 'factory_girl_rails', :require => false
+  gem "capybara" ,'~> 2.1.0'
+  gem "launchy" ,'~> 2.3.0'
+  gem "guard"
+  gem 'guard-spork' ,'~> 1.5.1'
+  gem 'guard-rspec'
+  gem 'guard-livereload' ,'~> 1.4.0'
+  gem 'guard-bundler'
+  gem 'guard-cucumber' ,'~> 1.4.0'
+
+  gem 'shoulda-matchers', "~> 2.2.0"
+
+  gem "poltergeist", "~> 1.3.0"
+  gem 'simplecov', :require => false
+end
