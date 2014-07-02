@@ -8,6 +8,19 @@ Bundler.require(:default, Rails.env)
 
 module Todo
   class Application < Rails::Application
+    # config.autoload_paths +=  Dir[Rails.root.join('app', 'services', '{**}')]
+    config.i18n.enforce_available_locales = false
+    I18n.config.enforce_available_locales = false
+
+    config.time_zone = 'Beijing'
+
+
+    # Configure sensitive parameters which will be filtered from the log file.
+    config.filter_parameters += [:password]
+
+    # Enable escaping HTML in JSON.
+    config.active_support.escape_html_entities_in_json = true
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -17,7 +30,8 @@ module Todo
     # config.time_zone = 'Central Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.default_locale = :zh_CN
+    config.encoding = "utf-8"
   end
 end
