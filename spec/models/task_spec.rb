@@ -27,6 +27,8 @@ describe Task do
   end
 
   it "over task state is over" do
-    Task.first.over.state.should == "over"
+    task=Task.first
+    task.over
+    task.state.should == "over"
   end
 end
