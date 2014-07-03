@@ -21,4 +21,12 @@ describe Task do
   it "take task children in root tasks" do
     Task.roots.first.children.first.content.should == "first task children"
   end
+
+  it "new task state is new" do
+    Task.first.state.should == "new"
+  end
+
+  it "over task state is over" do
+    Task.first.over.state.should == "over"
+  end
 end

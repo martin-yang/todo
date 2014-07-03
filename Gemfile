@@ -8,6 +8,8 @@ gem 'puma'
 gem 'sqlite3'
 
 gem 'ancestry'
+
+gem 'state_machine'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
