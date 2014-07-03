@@ -9,6 +9,6 @@ class TaskDate < ActiveRecord::Base
 
   # parameter date -->{year: year,month: month,day: day}
   def self.tasks_of(date)
-    Task.where(task_date_id: self.where(date).map(&:id))
+    self.where(date).first.tasks rescue []
   end
 end
