@@ -1,6 +1,7 @@
 class Task < ActiveRecord::Base
   has_ancestry
-  attr_accessible :content,:state,:created_at,:updated_at
+  attr_accessible :content,:state,:task_date,:task_date_id,:created_at,:updated_at
+  belongs_to :task_date
 
   validates_presence_of :content
 
