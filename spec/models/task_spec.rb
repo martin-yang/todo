@@ -6,12 +6,19 @@ describe Task do
     FactoryGirl.create(:task)
   end
   it "create task and validate task size" do
-    sleep 3
-    Task.all.size.should == 1
+    Task.all.size.should == 2
   end
 
   it "nil content in create task" do
     task=Task.create({})
     task.should have(1).error_on(:content)
+  end
+
+  it "take tasks of root" do
+    Task.roots.first.content.should == "root task"
+  end
+
+  it "take task children in root tasks" do
+    Task.roots.first.children.first.content.should == "first task children"
   end
 end
