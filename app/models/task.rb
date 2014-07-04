@@ -10,4 +10,10 @@ class Task < ActiveRecord::Base
       transition :new => :over
     end
   end
+
+  def delete_include_children
+    return self.delete if self.children.size.eql?(0)
+    self.children.delete_all
+    self.delete
+  end
 end
