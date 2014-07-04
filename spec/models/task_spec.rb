@@ -31,7 +31,7 @@ describe Task do
     task.over
     task.state.should == "over"
   end
-
+  
   it "delete task and include children" do
     Task.roots.first.delete_include_children
     Task.all.size.should == 0
