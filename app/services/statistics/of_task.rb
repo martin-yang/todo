@@ -5,7 +5,7 @@ class Statistics::OfTask
   end
 
   def self.by_date(date)
-    tasks=::TaskDate.tasks_of({year: date.year,month: date.month,day: date.day})
+    tasks=::TaskDate.tasks_of(BuildTaskDate.build(date))
     {date: date.strftime("%Y-%m-%d"),task_sum: tasks.size,going: of_state(tasks,"new"),over: of_state(tasks,"over")}
   end
 
