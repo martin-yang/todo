@@ -1,4 +1,9 @@
 class Statistics::OfTask
+  def self.by_month(date)
+    year,month=date.year,date.month
+    Time.days_in_month(month).times.map{|num| by_date(Time.local(year,month,num+1))}
+  end
+
   def self.by_date(date)
     tasks=::TaskDate.tasks_of({year: date.year,month: date.month,day: date.day})
     {date: date.strftime("%Y-%m-%d"),task_sum: tasks.size,going: of_state(tasks,"new"),over: of_state(tasks,"over")}
