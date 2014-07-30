@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'spec_helper'
 
-describe Statistics::OfTask do
+describe "statistics tasks" do
   before do
     FactoryGirl.create(:task)
   end
