@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'ancestry'
 
+gem 'slim'
+
 gem 'state_machine'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
