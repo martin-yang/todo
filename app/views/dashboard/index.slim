@@ -1,0 +1,707 @@
+#wrapper
+  nav.navbar-default.navbar-static-side role="navigation" 
+    .sidebar-collapse
+      ul#side-menu.nav
+        li.nav-header
+          .dropdown.profile-element
+            span
+              img.img-circle alt="image" src="images/profile_small.jpg" 
+            a.dropdown-toggle data-toggle="dropdown" href="#" 
+              span.clear
+                span.block.m-t-xs
+                  strong.font-bold Amelia Smith
+                span.text-muted.text-xs.block
+                  | Art Director
+                  b.caret
+            ul.dropdown-menu.animated.fadeInRight.m-t-xs
+              li
+                a href="profile.html"  Profile
+              li
+                a href="contacts.html"  Contacts
+              li
+                a href="mailbox.html"  Mailbox
+              li.divider
+              li
+                a href="login.html"  Logout
+          .logo-element
+            | IN+
+        li
+          a href="index.html" 
+            i.fa.fa-th-large
+            span.nav-label Dashboards
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse style=("height: 0px;") 
+            li.active
+              a href="index.html"  Dashboard v.1
+            li
+              a href="dashboard_2.html"  Dashboard v.2
+        li
+          a href="#" 
+            i.fa.fa-bar-chart-o
+            span.nav-label Graphs
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="graph_flot.html"  Flot Charts
+            li
+              a href="graph_morris.html"  Morris.js Charts
+            li
+              a href="graph_rickshaw.html"  Rickshaw Charts
+            li
+              a href="graph_peity.html"  Peity Charts
+            li
+              a href="graph_sparkline.html"  Sparkline Charts
+        li
+          a href="mailbox.html" 
+            i.fa.fa-envelope
+            span.nav-label Mailbox
+            span.label.label-warning.pull-right 16/24
+          ul.nav.nav-second-level.collapse
+            li
+              a href="mailbox.html"  Inbox
+            li
+              a href="mail_detail.html"  Email view
+            li
+              a href="mail_compose.html"  Compose email
+        li
+          a href="widgets.html" 
+            i.fa.fa-flask
+            span.nav-label Widgets
+            span.label.label-info.pull-right NEW
+        li
+          a href="#" 
+            i.fa.fa-edit
+            span.nav-label Forms
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="form_basic.html"  Basic form
+            li
+              a href="form_advanced.html"  Advanced Plugins
+            li
+              a href="form_wizard.html"  Wizard
+            li
+              a href="form_file_upload.html"  File Upload
+            li
+              a href="form_editors.html"  Text Editor
+        li
+          a href="#" 
+            i.fa.fa-desktop
+            span.nav-label App Views
+            span.pull-right.label.label-primary SPECIAL
+          ul.nav.nav-second-level.collapse
+            li
+              a href="contacts.html"  Contacts
+            li
+              a href="profile.html"  Profile
+            li
+              a href="file_manager.html"  File manager
+            li
+              a href="calendar.html"  Calendar
+            li
+              a href="timeline.html"  Timeline
+            li
+              a href="pin_board.html"  Pin board
+            li
+              a href="invoice.html"  Invoice
+            li
+              a href="login.html"  Login
+            li
+              a href="register.html"  Register
+        li
+          a href="#" 
+            i.fa.fa-files-o
+            span.nav-label Other Pages
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="search_results.html"  Search results
+            li
+              a href="lockscreen.html"  Lockscreen
+            li
+              a href="404.html"  404 Page
+            li
+              a href="500.html"  500 Page
+            li
+              a href="empty_page.html"  Empty page
+        li
+          a href="#" 
+            i.fa.fa-flask
+            span.nav-label UI Elements
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="typography.html"  Typography
+            li
+              a href="icons.html"  Icons
+            li
+              a href="draggable_panels.html"  Draggable Panels
+            li
+              a href="buttons.html"  Buttons
+            li
+              a href="tabs_panels.html"  Tabs &amp; Panels
+            li
+              a href="notifications.html"  Notifications &amp; Tooltips
+            li
+              a href="badges_labels.html"  Badges, Labels, Progress
+        li
+          a href="#" 
+            i.fa.fa-laptop
+            span.nav-label Layout
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="grid_options.html"  Grid options
+            li
+              a href="boxed_layout.html"  Boxed layout
+        li
+          a href="#" 
+            i.fa.fa-table
+            span.nav-label Tables
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="table_basic.html"  Static Tables
+            li
+              a href="table_data_tables.html"  Data Tables
+        li
+          a href="#" 
+            i.fa.fa-picture-o
+            span.nav-label Gallery
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="basic_gallery.html"  Basic Gallery
+            li
+              a href="carousel.html"  Bootstrap Carusela
+        li
+          a href="#" 
+            i.fa.fa-sitemap
+            span.nav-label Menu Levels
+            span.fa.arrow
+          ul.nav.nav-second-level.collapse
+            li
+              a href="#" 
+                | Third Level
+                span.fa.arrow
+              ul.nav.nav-third-level.collapse
+                li
+                  a href="#"  Third Level Item
+                li
+                  a href="#"  Third Level Item
+                li
+                  a href="#"  Third Level Item
+            li
+              a href="#"  Second Level Item
+            li
+              a href="#"  Second Level Item
+            li
+              a href="#"  Second Level Item
+        li
+          a href="css_animation.html" 
+            i.fa.fa-magic
+            span.nav-label CSS Animations
+            span.label.label-info.pull-right 62
+  #page-wrapper.gray-bg
+    .row.border-bottom
+      nav.navbar.navbar-static-top role="navigation" style=("margin-bottom: 0") 
+        .navbar-header
+          a.navbar-minimalize.minimalize-styl-2.btn.btn-primary href="#" 
+            i.fa.fa-bars
+          form.navbar-form-custom action="search_results.html" method="post" role="search" 
+            .form-group
+              input#top-search.form-control name="top-search" placeholder=("Search for something...") type="text" 
+        ul.nav.navbar-top-links.navbar-right
+          li
+            span.m-r-sm.text-muted.welcome-message Welcome to INSPINIA+ Admin Theme.
+          li.dropdown
+            a.dropdown-toggle.count-info data-toggle="dropdown" href="#" 
+              i.fa.fa-envelope
+              span.label.label-warning 16
+            ul.dropdown-menu.dropdown-messages
+              li
+                .dropdown-messages-box
+                  a.pull-left href="profile.html" 
+                    img.img-circle alt="image" src="images/a7.jpg" 
+                  .media-body
+                    small.pull-right 46h ago
+                    strong Mike Loreipsum
+                    | started following
+                    
+                    br
+                      small.text-muted 3 days ago at 7:58 pm - 10.06.2014
+              li.divider
+              li
+                .dropdown-messages-box
+                  a.pull-left href="profile.html" 
+                    img.img-circle alt="image" src="images/a4.jpg" 
+                  .media-body
+                    small.pull-right.text-navy 5h ago
+                    strong Chris Johnatan Overtunk
+                    | started following
+                    
+                    br
+                      small.text-muted Yesterday 1:21 pm - 11.06.2014
+              li.divider
+              li
+                .dropdown-messages-box
+                  a.pull-left href="profile.html" 
+                    img.img-circle alt="image" src="images/profile.jpg" 
+                  .media-body
+                    small.pull-right 23h ago
+                    strong Monica Smith
+                    | love
+                                      br
+                      small.text-muted 2 days ago at 2:30 am - 11.06.2014
+              li.divider
+              li
+                .text-center.link-block
+                  a href="mailbox.html" 
+                    i.fa.fa-envelope
+                    strong Read All Messages
+          li.dropdown
+            a.dropdown-toggle.count-info data-toggle="dropdown" href="#" 
+              i.fa.fa-bell
+              span.label.label-primary 8
+            ul.dropdown-menu.dropdown-alerts
+              li
+                a href="mailbox.html" 
+                  div
+                    i.fa.fa-envelope.fa-fw
+                    | You have 16 messages
+                    span.pull-right.text-muted.small 4 minutes ago
+              li.divider
+              li
+                a href="profile.html" 
+                  div
+                    i.fa.fa-twitter.fa-fw
+                    | 3 New Followers
+                    span.pull-right.text-muted.small 12 minutes ago
+              li.divider
+              li
+                a href="grid_options.html" 
+                  div
+                    i.fa.fa-upload.fa-fw
+                    | Server Rebooted
+                    span.pull-right.text-muted.small 4 minutes ago
+              li.divider
+              li
+                .text-center.link-block
+                  a href="notifications.html" 
+                    strong See All Alerts
+                    i.fa.fa-angle-right
+          li
+            a href="login.html" 
+              i.fa.fa-sign-out
+              | Log out
+    .row.border-bottom.white-bg.dashboard-header
+      .col-sm-3
+        h2 Welcome Amelia
+        small You have 42 messages and 6 notifications.
+        ul.list-group.clear-list.m-t
+          li.list-group-item.fist-item
+            span.pull-right
+              | 09:00 pm
+            span.label.label-success 1
+            | Please contact me
+          li.list-group-item
+            span.pull-right
+              | 10:16 am
+            span.label.label-info 2
+            | Sign a contract
+          li.list-group-item
+            span.pull-right
+              | 08:22 pm
+            span.label.label-primary 3
+            | Open new shop
+          li.list-group-item
+            span.pull-right
+              | 11:06 pm
+            span.label.label-default 4
+            | Call back to Sylvia
+          li.list-group-item
+            span.pull-right
+              | 12:00 am
+            span.label.label-primary 5
+            | Write a letter to Sandra
+      .col-sm-6
+        .flot-chart.dashboard-chart
+          #flot-dashboard-chart.flot-chart-content style=("padding: 0px; position: relative;") 
+            canvas.base height="180" width="523" 
+            canvas.overlay height="180" style=("position: absolute; left: 0px; top: 0px;") width="523" 
+            .tickLabels style="font-size:smaller" 
+              .xAxis.x1Axis style="color:#d5d5d5" 
+                .tickLabel style="position:absolute;text-align:center;left:-15px;top:166px;width:65px"  0.0
+                .tickLabel style="position:absolute;text-align:center;left:63px;top:166px;width:65px"  2.5
+                .tickLabel style="position:absolute;text-align:center;left:142px;top:166px;width:65px"  5.0
+                .tickLabel style="position:absolute;text-align:center;left:221px;top:166px;width:65px"  7.5
+                .tickLabel style="position:absolute;text-align:center;left:300px;top:166px;width:65px"  10.0
+                .tickLabel style="position:absolute;text-align:center;left:379px;top:166px;width:65px"  12.5
+                .tickLabel style="position:absolute;text-align:center;left:458px;top:166px;width:65px"  15.0
+              .yAxis.y1Axis style="color:#d5d5d5" 
+                .tickLabel style="position:absolute;text-align:right;top:153px;right:512px;width:11px"  0
+                .tickLabel style="position:absolute;text-align:right;top:113px;right:512px;width:11px"  10
+                .tickLabel style="position:absolute;text-align:right;top:74px;right:512px;width:11px"  20
+                .tickLabel style="position:absolute;text-align:right;top:34px;right:512px;width:11px"  30
+                .tickLabel style="position:absolute;text-align:right;top:-6px;right:512px;width:11px"  40
+        .row.text-left
+          .col-xs-4
+            .m-l-md
+              span.h4.font-bold.m-t.block $ 406,100
+              small.text-muted.m-b.block Sales marketing report
+          .col-xs-4
+            span.h4.font-bold.m-t.block $ 150,401
+            small.text-muted.m-b.block Annual sales revenue
+          .col-xs-4
+            span.h4.font-bold.m-t.block $ 16,822
+            small.text-muted.m-b.block Half-year revenue margin
+      .col-sm-3
+        .statistic-box
+          h4
+            | Project Beta progress
+          p
+            | You have two project with not compleated task.
+          .row.text-center
+            .col-lg-6
+              .chart.easypiechart.inline data-percent="73" 
+                span.easypie-text 61%
+                canvas height="80" width="80" 
+              h5 Kolter
+            .col-lg-6
+              .chart2.easypiechart.inline data-percent="33" 
+                span.easypie-text 31%
+                canvas height="80" width="80" 
+              h5 Maxtor
+          .m-t
+            small Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    .row
+      .col-lg-12
+        .wrapper.wrapper-content
+          .row
+            .col-lg-4
+              .ibox.float-e-margins.ui-draggable.ui-droppable style=("position: relative;") 
+                .ibox-title
+                  h5 New data for the report
+                  span.label.label-primary IN+
+                  .ibox-tools
+                    a.collapse-link
+                      i.fa.fa-chevron-up
+                    a.dropdown-toggle data-toggle="dropdown" href="#" 
+                      i.fa.fa-wrench
+                    ul.dropdown-menu.dropdown-user
+                      li
+                        a href="#"  Config option 1
+                      li
+                        a href="#"  Config option 2
+                    a.close-link
+                      i.fa.fa-times
+                .ibox-content
+                  div
+                    .pull-right.text-right
+                      span.bar_dashboard style=("display: none;")  5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1
+                      svg.peity height="16" width="100" 
+                        rect fill="#1ab394" height="8.88888888888889" width="2.2580645161290325" x="0" y="7.111111111111111" /
+                        rect fill="#d7d7d7" height="5.333333333333333" width="2.2580645161290325" x="3.2580645161290325" y="10.666666666666668" /
+                        rect fill="#1ab394" height="16" width="2.2580645161290325" x="6.516129032258065" y="0" /
+                        rect fill="#d7d7d7" height="10.666666666666666" width="2.2580645161290325" x="9.774193548387098" y="5.333333333333334" /
+                        rect fill="#1ab394" height="8.88888888888889" width="2.2580645161290325" x="13.03225806451613" y="7.111111111111111" /
+                        rect fill="#d7d7d7" height="16" width="2.2580645161290325" x="16.290322580645164" y="0" /
+                        rect fill="#1ab394" height="12.444444444444443" width="2.2580645161290325" x="19.548387096774196" y="3.555555555555557" /
+                        rect fill="#d7d7d7" height="5.333333333333333" width="2.2580645161290325" x="22.806451612903228" y="10.666666666666668" /
+                        rect fill="#1ab394" height="8.88888888888889" width="2.2580645161290325" x="26.06451612903226" y="7.111111111111111" /
+                        rect fill="#d7d7d7" height="3.5555555555555554" width="2.2580645161290325" x="29.322580645161292" y="12.444444444444445" /
+                        rect fill="#1ab394" height="7.111111111111111" width="2.2580645161290325" x="32.58064516129033" y="8.88888888888889" /
+                        rect fill="#d7d7d7" height="12.444444444444443" width="2.2580645161290325" x="35.83870967741936" y="3.555555555555557" /
+                        rect fill="#1ab394" height="5.333333333333333" width="2.2580645161290325" x="39.09677419354839" y="10.666666666666668" /
+                        rect fill="#d7d7d7" height="3.5555555555555554" width="2.2580645161290325" x="42.35483870967742" y="12.444444444444445" /
+                        rect fill="#1ab394" height="12.444444444444443" width="2.2580645161290325" x="45.612903225806456" y="3.555555555555557" /
+                        rect fill="#d7d7d7" height="16" width="2.2580645161290325" x="48.87096774193549" y="0" /
+                        rect fill="#1ab394" height="10.666666666666666" width="2.2580645161290325" x="52.12903225806452" y="5.333333333333334" /
+                        rect fill="#d7d7d7" height="7.111111111111111" width="2.2580645161290325" x="55.38709677419355" y="8.88888888888889" /
+                        rect fill="#1ab394" height="8.88888888888889" width="2.2580645161290325" x="58.645161290322584" y="7.111111111111111" /
+                        rect fill="#d7d7d7" height="12.444444444444443" width="2.2580645161290325" x="61.903225806451616" y="3.555555555555557" /
+                        rect fill="#1ab394" height="5.333333333333333" width="2.2580645161290325" x="65.16129032258065" y="10.666666666666668" /
+                        rect fill="#d7d7d7" height="3.5555555555555554" width="2.2580645161290325" x="68.41935483870968" y="12.444444444444445" /
+                        rect fill="#1ab394" height="1.7777777777777777" width="2.2580645161290325" x="71.67741935483872" y="14.222222222222221" /
+                        rect fill="#d7d7d7" height="1" width="2.2580645161290325" x="74.93548387096774" y="15" /
+                        rect fill="#1ab394" height="16" width="2.2580645161290325" x="78.19354838709678" y="0" /
+                        rect fill="#d7d7d7" height="8.88888888888889" width="2.2580645161290325" x="81.45161290322581" y="7.111111111111111" /
+                        rect fill="#1ab394" height="10.666666666666666" width="2.2580645161290325" x="84.70967741935485" y="5.333333333333334" /
+                        rect fill="#d7d7d7" height="14.222222222222221" width="2.2580645161290325" x="87.96774193548387" y="1.7777777777777786" /
+                        rect fill="#1ab394" height="5.333333333333333" width="2.2580645161290325" x="91.22580645161291" y="10.666666666666668" /
+                        rect fill="#d7d7d7" height="3.5555555555555554" width="2.2580645161290325" x="94.48387096774194" y="12.444444444444445" /
+                        rect fill="#1ab394" height="1.7777777777777777" width="2.2580645161290325" x="97.74193548387098" y="14.222222222222221" /
+                      br
+                        small.font-bold $ 20 054.43
+                    h4
+                      | NYS report new data!
+                      br
+                        small.m-r
+                          a href="graph_flot.html"  Check the stock price!
+              .ibox.float-e-margins.ui-draggable.ui-droppable style=("position: relative;") 
+                .ibox-title
+                  h5 Read below comments and tweets
+                  .ibox-tools
+                    a.collapse-link
+                      i.fa.fa-chevron-up
+                    a.dropdown-toggle data-toggle="dropdown" href="#" 
+                      i.fa.fa-wrench
+                    ul.dropdown-menu.dropdown-user
+                      li
+                        a href="#"  Config option 1
+                      li
+                        a href="#"  Config option 2
+                    a.close-link
+                      i.fa.fa-times
+                .ibox-content.no-padding
+                  ul.list-group
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Alan Marry
+                        | I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 1 minuts ago
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Stock Man
+                        | Check this stock chart. This price is crazy!
+                      .text-center.m
+                        span#sparkline8
+                          canvas height="150" style=("display: inline-block; width: 170px; height: 150px; vertical-align: top;") width="170" 
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 2 hours ago
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Kevin Smith
+                        | Lorem ipsum unknown printer took a galley
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 2 minuts ago
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Jonathan Febrick
+                        | The standard chunk of Lorem Ipsum
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 1 hour ago
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Alan Marry
+                        | I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 1 minuts ago
+                    li.list-group-item
+                      p
+                        a.text-info href="#"  @Kevin Smith
+                        | Lorem ipsum unknown printer took a galley
+                      small.block.text-muted
+                        i.fa.fa-clock-o
+                        | 2 minuts ago
+            .col-lg-4
+              .ibox.float-e-margins.ui-draggable.ui-droppable style=("position: relative;") 
+                .ibox-title
+                  h5 Your daily feed
+                  .ibox-tools
+                    span.label.label-warning-light 10 Messages
+                .ibox-content
+                  div
+                    .feed-activity-list
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/profile.jpg" 
+                        .media-body
+                          small.pull-right 5m ago
+                          strong Monica Smith
+                          | posted a new blog.
+                          br
+                            small.text-muted Today 5:60 pm - 12.06.2014
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/a2.jpg" 
+                        .media-body
+                          small.pull-right 2h ago
+                          strong Mark Johnson
+                          | posted message on
+                          strong Monica Smith
+                          | site.
+                          br
+                            small.text-muted Today 2:10 pm - 12.06.2014
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/a3.jpg" 
+                        .media-body
+                          small.pull-right 2h ago
+                          strong Janet Rosowski
+                          | add 1 photo on
+                          
+                          br
+                            small.text-muted 2 days ago at 8:30am
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/a4.jpg" 
+                        .media-body
+                          small.pull-right.text-navy 5h ago
+                          strong Chris Johnatan Overtunk
+                          | started following
+                          
+                          br
+                            small.text-muted Yesterday 1:21 pm - 11.06.2014
+                            .actions
+                              a.btn.btn-xs.btn-white
+                                i.fa.fa-thumbs-up
+                                | Like
+                              a.btn.btn-xs.btn-white
+                                i.fa.fa-heart
+                                | Love
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/a5.jpg" 
+                        .media-body
+                          small.pull-right 2h ago
+                          strong Kim Smith
+                          | posted message on
+                          strong Monica Smith
+                          | site.
+                          br
+                            small.text-muted Yesterday 5:20 pm - 12.06.2014
+                            .well
+                              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                              | Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            .pull-right
+                              a.btn.btn-xs.btn-white
+                                i.fa.fa-thumbs-up
+                                | Like
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/profile.jpg" 
+                        .media-body
+                          small.pull-right 23h ago
+                          strong Monica Smith
+                          | love
+                                                  br
+                            small.text-muted 2 days ago at 2:30 am - 11.06.2014
+                      .feed-element
+                        a.pull-left href="profile.html" 
+                          img.img-circle alt="image" src="images/a7.jpg" 
+                        .media-body
+                          small.pull-right 46h ago
+                          strong Mike Loreipsum
+                          | started following
+                          
+                          br
+                            small.text-muted 3 days ago at 7:58 pm - 10.06.2014
+                    button.btn.btn-primary.btn-block.m-t
+                      i.fa.fa-arrow-down
+                      | Show More
+            .col-lg-4
+              .ibox.float-e-margins.ui-draggable.ui-droppable style=("position: relative;") 
+                .ibox-title
+                  h5 Alpha project
+                  .ibox-tools
+                    a.collapse-link
+                      i.fa.fa-chevron-up
+                    a.dropdown-toggle data-toggle="dropdown" href="#" 
+                      i.fa.fa-wrench
+                    ul.dropdown-menu.dropdown-user
+                      li
+                        a href="#"  Config option 1
+                      li
+                        a href="#"  Config option 2
+                    a.close-link
+                      i.fa.fa-times
+                .ibox-content.ibox-heading
+                  h3 You have meeting today!
+                  small
+                    i.fa.fa-map-marker
+                    | Meeting is on 6:00am. Check your schedule to see detail.
+                .ibox-content.inspinia-timelnie
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-briefcase
+                        | 6:00 am
+                        br
+                          small.text-navy 2 hour ago
+                      .col-xs-7.content.no-top-border
+                        p.m-b-xs
+                          strong Meeting
+                        p
+                          | Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the
+                          | sale.
+                        p
+                          span.updating-chart data-diameter="40" style=("display: none;")  8,2,7,7,5,6,9,6,3,5,6,4,4,3,0,5,9,0,9,5,7,2,9,4,10,4,4,3,10,2,7,1,10,2,4,4,1
+                          svg.peity height="16" width="64" 
+                            polygon fill="#1ab394" points=("0 15 0 3.5 1.7777777777777777 12.5 3.5555555555555554 5 5.333333333333333 5 7.111111111111111 8 8.88888888888889 6.5 10.666666666666666 2 12.444444444444443 6.5 14.222222222222221 11 16 8 17.77777777777778 6.5 19.555555555555554 9.5 21.333333333333332 9.5 23.11111111111111 11 24.888888888888886 15.5 26.666666666666664 8 28.444444444444443 2 30.22222222222222 15.5 32 2 33.77777777777778 8 35.55555555555556 5 37.33333333333333 12.5 39.11111111111111 2 40.888888888888886 9.5 42.666666666666664 0.5 44.44444444444444 9.5 46.22222222222222 9.5 48 11 49.77777777777777 0.5 51.55555555555555 12.5 53.33333333333333 5 55.11111111111111 14 56.888888888888886 0.5 58.666666666666664 12.5 60.44444444444444 9.5 62.22222222222222 9.5 64 14 64 15") /
+                            polyline fill="transparent" points=("0 3.5 1.7777777777777777 12.5 3.5555555555555554 5 5.333333333333333 5 7.111111111111111 8 8.88888888888889 6.5 10.666666666666666 2 12.444444444444443 6.5 14.222222222222221 11 16 8 17.77777777777778 6.5 19.555555555555554 9.5 21.333333333333332 9.5 23.11111111111111 11 24.888888888888886 15.5 26.666666666666664 8 28.444444444444443 2 30.22222222222222 15.5 32 2 33.77777777777778 8 35.55555555555556 5 37.33333333333333 12.5 39.11111111111111 2 40.888888888888886 9.5 42.666666666666664 0.5 44.44444444444444 9.5 46.22222222222222 9.5 48 11 49.77777777777777 0.5 51.55555555555555 12.5 53.33333333333333 5 55.11111111111111 14 56.888888888888886 0.5 58.666666666666664 12.5 60.44444444444444 9.5 62.22222222222222 9.5 64 14") stroke="#169c81" stroke-linecap="square" stroke-width="1" /
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-file-text
+                        | 7:00 am
+                        br
+                          small.text-navy 3 hour ago
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Send documents to Mike
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-coffee
+                        | 8:00 am
+                        br
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Coffee Break
+                        p
+                          | Go to shop and find some products.
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-phone
+                        | 11:00 am
+                        br
+                          small.text-navy 21 hour ago
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Phone with Jeronimo
+                        p
+                          | Lorem Ipsum has been the industry's standard dummy text ever since.
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-user-md
+                        | 09:00 pm
+                        br
+                          small 21 hour ago
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Go to the doctor dr Smith
+                        p
+                          | Find some issue and go to doctor.
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-user-md
+                        | 11:10 pm
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Chat with Sandra
+                        p
+                          | Lorem Ipsum has been the industry's standard dummy text ever since.
+                  .timelnie-item
+                    .row
+                      .col-xs-3.date
+                        i.fa.fa-comments
+                        | 12:50 pm
+                        br
+                          small.text-navy 48 hour ago
+                      .col-xs-7.content
+                        p.m-b-xs
+                          strong Chat with Monica and Sandra
+                        p
+                          | Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
