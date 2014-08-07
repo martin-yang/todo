@@ -3,3 +3,5 @@ zh_cn:
     state:
       new: "进行中"
       over: "完成"
+  email:
+    title: "%{today}任务清单"
