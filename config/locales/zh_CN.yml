@@ -1,0 +1,5 @@
+zh_cn:
+  task:
+    state:
+      new: "进行中"
+      over: "完成"
