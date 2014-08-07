@@ -2,6 +2,129 @@
 <html>
 <head>
   <title>任务管理</title>
+  <style type="text/css">
+    body {
+      background-color: #FFFFFF;
+      color: #333333;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+    }
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header:before, .navbar-header:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header:after {
+    clear: both;
+    }
+    .navbar-header:before, .navbar-header:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header {
+    float: left;
+    }
+    a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    a {
+    color: #428BCA;
+    text-decoration: none;
+    }
+    .navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px;
+    }
+    .navbar-default .navbar-brand {
+    color: #777777;
+    }
+    .row:before, .row:after {
+    content: " ";
+    display: table;
+    }
+    .row:before, .row:after {
+    content: " ";
+    display: table;
+    }
+    .row:after {
+    clear: both;
+    }
+    .navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+    }
+    .navbar-fixed-top {
+    border-width: 0 0 1px;
+    top: 0;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0 0 0 0;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 1030;
+    }
+    .navbar {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    min-height: 50px;
+    position: relative;
+    }
+    .col-lg-6 {
+    width: 50%;
+    }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    }
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    }
+    h3, .h3 {
+    font-size: 24px;
+    }
+    h1, .h1, h2, .h2, h3, .h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    }
+    .table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+    }
+    table {
+    background-color: rgba(0, 0, 0, 0);
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    .table > thead > tr > th {
+    border-bottom: 2px solid #DDDDDD;
+    vertical-align: bottom;
+    }
+    th {
+    text-align: left;
+    }
+  </style>
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
   <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/font-awesome.css">
@@ -29,12 +152,12 @@
         <tbody>
           <% @today_tasks[:tasks].each do |task| %>
             <tr>
-              <td style='width: 200px;'><%= task.content %></td>
+              <td style='width: 200px;'><%= task[:content] %></td>
               <td style="text-align: left;">
-              	<% if task.state.eql?("new") %>
-                  <a class="btn btn-danger"><%= I18n.t "task.state.#{task.state}" %></a>
+                <% if task[:state].eql?("new") %>
+                  <a class="btn btn-danger"><%= task[:state] %></a>
                 <% else %>
-                  <a class="btn btn-success"><%= I18n.t "task.state.#{task.state}" %></a>
+                  <a class="btn btn-success"><%= task[:state] %></a>
                 <% end %>
               </td>
             </tr>

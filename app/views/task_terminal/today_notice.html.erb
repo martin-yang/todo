@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>任务管理</title>
+    <style type="text/css">
+    body {
+      background-color: #FFFFFF;
+      color: #333333;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      line-height: 1.42857;
+    }
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header:before, .navbar-header:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header:after {
+    clear: both;
+    }
+    .navbar-header:before, .navbar-header:after {
+    content: " ";
+    display: table;
+    }
+    .navbar-header {
+    float: left;
+    }
+    a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+    a {
+    color: #428BCA;
+    text-decoration: none;
+    }
+    .navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px;
+    }
+    .navbar-default .navbar-brand {
+    color: #777777;
+    }
+    .row:before, .row:after {
+    content: " ";
+    display: table;
+    }
+    .row:before, .row:after {
+    content: " ";
+    display: table;
+    }
+    .row:after {
+    clear: both;
+    }
+    
+
+    h3, .h3 {
+    font-size: 24px;
+    }
+    h1, .h1, h2, .h2, h3, .h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    }
+    .table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+    }
+    table {
+    background-color: rgba(0, 0, 0, 0);
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    .table > thead > tr > th {
+    border-bottom: 2px solid #DDDDDD;
+    vertical-align: bottom;
+    }
+    th {
+    text-align: left;
+    }
+    .btn-danger {
+    background-color: #D9534F;
+    border-color: #D43F3A;
+    color: #FFFFFF;
+    }
+    .btn {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    }
+    .btn-success {
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+    color: #FFFFFF;
+    }
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #F9F9F9;
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #DDDDDD;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+    }
+    
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    -moz-box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+}
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+    content: " ";
+    display: table;
+}
+.navbar:after {
+    clear: both;
+}
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+.navbar:after {
+    clear: both;
+}
+.navbar:before, .navbar:after {
+    content: " ";
+    display: table;
+}
+*:before, *:after {
+    -moz-box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+.navbar-fixed-top {
+    border-width: 0 0 1px;
+    top: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0 0 0 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 1030;
+}
+.navbar {
+    border-radius: 4px 4px 4px 4px;
+}
+.navbar {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    min-height: 50px;
+    position: relative;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+.navbar-fixed-top {
+    border-width: 0 0 1px;
+    top: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0 0 0 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+.navbar {
+    border-radius: 4px 4px 4px 4px;
+}
+.navbar {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    min-height: 50px;
+    position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+* {
+    -moz-box-sizing: border-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+}
+  </style>
+</head>
+<body>
+<div class="row">
+  <nav style="margin-bottom: 0" role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+      <a ui-sref="home" class="navbar-brand"><%= I18n.t "email.title",today: @today_tasks[:date] %></a>
+    </div>
+  </nav>
+
+  <div style="padding-top: 30px;">
+    <div style="width:50%;float:left;">
+    <h3>任务清单</h3>
+    </div>
+    <div style="width:50%;float:left;">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>任务</th>
+            <th style="text-align: left;">状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @today_tasks[:tasks].each do |task| %>
+            <tr>
+              <td style='width: 200px;'><%= task[:content] %></td>
+              <td style="text-align: left;">
+                <% if task[:state].eql?("new") %>
+                  <a class="btn btn-danger"><%= task[:state] %></a>
+                <% else %>
+                  <a class="btn btn-success"><%= task[:state] %></a>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
