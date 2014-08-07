@@ -7,7 +7,7 @@ describe "TodayTaskSizeSpec" do
   end
 
   it "take today Task size" do
-    Search::TakeTasksByDate.new(Time.local(2014,7,3)).execute.should == {date: "2014-07-03",tasks: [{id: 1,content: "root task",state: "进行中"}]}
+    BuildTodayTasksDataStyle.execute(Time.local(2014,7,3)).should == {date: "2014-07-03",tasks: [{id: 1,content: "root task",state: "进行中"}]}
   end
 
 end
