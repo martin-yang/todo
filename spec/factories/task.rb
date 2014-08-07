@@ -1,12 +1,7 @@
 FactoryGirl.define do
-  factory :task do
-    content 'first task children'
-    association :parent, factory: :root_task
-  end
 
-  factory :root_task,class: Task do
+  factory :task,class: Task do
     content 'root task'
-    parent nil
     association :task_date, factory: :task_date
   end
 
