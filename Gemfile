@@ -7,9 +7,11 @@ gem 'puma'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-gem 'ancestry'
+# gem 'ancestry'
 
 gem 'slim'
+
+gem 'resque', :require => "resque/server"
 
 # timing tasks
 gem 'rufus-scheduler'
