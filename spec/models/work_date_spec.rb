@@ -7,6 +7,6 @@ describe WorkDate do
   end
 
   it "take off duty" do
-    WorkDate.take_off_duty_date.eql?("#{Time.now.strftime('%Y-%m-%d')} 18:00:00")
+    WorkDate.first.take_off_duty_date.eql?("#{Time.now.strftime('%Y-%m-%d')} 18:00:00")
   end
 end
