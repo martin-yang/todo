@@ -19,4 +19,11 @@ ActiveRecord::Schema.define(version: 20140708222957) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "work_dates", force: true do |t|
+    t.string "start_hour"
+    t.string "end_hour"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 end
