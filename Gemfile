@@ -11,6 +11,9 @@ gem 'ancestry'
 
 gem 'slim'
 
+# timing tasks
+gem 'rufus-scheduler'
+
 gem 'state_machine'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
