@@ -4,7 +4,7 @@ class TaskTerminal < ActionMailer::Base
   def today_notice
     @today_tasks = BuildTodayTasksDataStyle.execute(Time.local(2014,7,3))
     @today_complete_detail = Statistics::TakeTasksNumByDate.new(Time.local(2014,7,3)).execute("take_today")
-    
+    @today_spend_time = Statistics::TakeTasksSpendTime.execute(Time.local(2014,7,3))
     mail(to: "408290909@qq.com", subject: (I18n.t "email.title",today: Time.local(2014,7,3).strftime("%Y-%m-%d")))
   end
 end
