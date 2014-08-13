@@ -6,8 +6,7 @@ require File.expand_path('../../config/application', __FILE__)
 Todo::Application.initialize!
 
 scheduler = Rufus::Scheduler.new  
-scheduler.cron "30 19 * * *" do  
-  p "-----start---"
+scheduler.cron "42 18 * * *" do  
   Resque.enqueue(TimingSendTasksMail)
 end  
   
