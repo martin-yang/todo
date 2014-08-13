@@ -25,5 +25,9 @@ describe "statistics tasks" do
     it "take today tasks complete detail" do
       Statistics::TakeTasksNumByDate.new(Time.local(2014,7,3)).execute("take_today").should == {date: "2014-07-03",task_sum: 4,going: 1,over: 3}
     end
+
+    it "send today tasks complete detail email" do
+      TaskTerminal.today_notice.deliver
+    end
   end
 end
