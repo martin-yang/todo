@@ -29,5 +29,9 @@ describe "statistics tasks" do
     it "send today tasks complete detail email" do
       TaskTerminal.today_notice.deliver
     end
+
+    it "take tasks spend time" do
+      Statistics::TakeTasksSpendTime.new(Time.local(2014,7,3)).execute.size.should == 4
+    end
   end
 end
