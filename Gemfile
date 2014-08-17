@@ -13,6 +13,8 @@ gem 'slim'
 
 gem 'resque', :require => "resque/server"
 
+gem 'devise'
+
 # timing tasks
 gem 'rufus-scheduler'
 
