@@ -1,5 +1,6 @@
 Todo::Application.routes.draw do
-  root 'dashboard#index'
+  devise_for :users
+  root 'welcome#index'
 
   mount Resque::Server, :at => "/resque"
 end
